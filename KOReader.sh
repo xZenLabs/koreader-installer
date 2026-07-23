@@ -93,6 +93,10 @@ download_to() {
 }
 
 kindle_ota_zsync() {
+    # Update model codes from KindleTool's device database:
+    # https://github.com/NiLuJe/KindleTool/blob/master/KindleTool/kindle_tool.c
+    # MobileRead's serial-number table provides the human-readable model mapping:
+    # https://wiki.mobileread.com/wiki/Kindle_Serial_Numbers
     if [ -e /lib/ld-linux-armhf.so.3 ]; then
         echo "koreader-kindlehf-latest-$KO_CHANNEL.zsync"
         return
