@@ -6,7 +6,7 @@
 
 set -u
 
-SCRIPT_VERSION="1.0.0"
+SCRIPT_VERSION="1.0.1"
 USB_ROOT="/mnt/us"
 LOG_FILE="$USB_ROOT/KOReader.log"
 KOREADER_SH="$USB_ROOT/koreader/koreader.sh"
